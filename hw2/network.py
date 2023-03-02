@@ -38,8 +38,8 @@ class ThreeInputsNet(nn.Module):
         self.category_out = nn.Sequential(
             nn.Linear(in_features=n_cat_features, out_features=hid_size),
             nn.ReLU(),
-            nn.Linear(in_features=hid_size, out_features=hid_size),
-            nn.ReLU()
+            # nn.Linear(in_features=hid_size, out_features=hid_size),
+            # nn.ReLU()
         )
 
         # Example for the final layers (after the concatenation)
